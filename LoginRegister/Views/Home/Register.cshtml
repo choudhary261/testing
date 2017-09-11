@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+@using(Html.BeginForm()){
+
+<br />
+
+
+<table>
+    <tr>
+        <td>Username</td>
+        <td> <input type="text" name="txtname" /> </td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td> <input type="text" name="txtemail" /> </td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td> <input type="password" name="txtpass" /> </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Register" />
+            @Html.ActionLink("Login","index","Home");
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>@ViewBag.msg</td>
+    </tr>
+
+</table>
+    
+}
